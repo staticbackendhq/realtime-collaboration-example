@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<title>Code collaboration demo</title>
+
+	<link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+
+	<link rel="stylesheet"  href="/style.css?v=1">
+</head>
+
+<body>
+	<div id="init">
+		<h1>Create or join a collaborative space</h1>
+		<form id="form">
+			<div>
+				<label>Room name</label>
+				<input type="text" name="room" placeholder="Short name" />
+			</div>
+			<div>
+				<label>Your name</label>
+				<input type="text" name="name" placeholder="Your name" />
+			</div>
+			<div>
+				<label>Your PIN</label>
+				<input type="text" name="pin" placeholder="Your PIN" />
+			</div>
+			<div>
+				<button id="create">Create now</button>
+				<button id="join">Join now</button>
+			</div>
+		</form>
+	</div>
+	<div id="codaborate" class="hidden">
+		<h1 id="title"></h1>
+		<div id="controls" class="hidden">
+			<button id="control">Give them keyboard control</button>
+		</div>
+		<div id="editing" class="hidden">
+			<textarea id="editor" rows="25" style="width: 100%;" placeholder="type your code"></textarea>
+		</div>
+		<div id="viewer" class="hidden">
+			<code id="code"></code>
+		</div>
+	</div>
+	<script>
+		var s = document.createElement("script");
+		s.src = "/dist/codaborate.js?v" + (new Date().getTime()).toString();
+
+		document.body.appendChild(s);
+	</script>
+</body>
+
+</html>

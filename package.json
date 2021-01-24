@@ -1,0 +1,21 @@
+{
+  "name": "realtime-collaboration-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "build": "npm run build:app && npm run build:auth",
+    "build:app": "parcel build app.js -o codaborate.js",
+    "build:auth": "parcel build auth.js -o user.js",
+    "help": "parcel build -h"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@staticbackend/js": "file:../../backend-js",
+    "http-server": "^0.12.3",
+    "parcel": "^1.12.4"
+  }
+}

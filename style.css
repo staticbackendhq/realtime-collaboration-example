@@ -1,0 +1,19 @@
+.hidden {
+	display: none;
+}
+
+label {
+	display: block;
+}
+
+div {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#viewer {
+	width: 100%;
+	min-height: 800px;
+	border: 1px solid #c9c0c9;
+	padding: 10px 10px 10px 10px;
+}

@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<title>Code collaboration demo</title>
+
+	<link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+	<link rel="stylesheet"  href="/style.css">
+</head>
+
+<body>
+		<h1>Login or create an account</h1>
+		<form id="authForm">
+			<div>
+				<label>Your email</label>
+				<input type="email" name="email" placeholder="Your email" />
+			</div>
+			<div>
+				<label>Your password</label>
+				<input type="password" name="password" placeholder="Your password" />
+			</div>
+			<div>
+				<button id="login">Login</button>
+				<button id="register">Register</button>
+			</div>
+		</form>
+	<script>
+		var s = document.createElement("script");
+		s.src = "/dist/user.js?v" + (new Date().getTime()).toString();
+
+		document.body.appendChild(s);
+	</script>
+</body>
+
+</html>
